@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <input type="button" value="Add creature" onclick="addCreature()"> 
+    <input type="button" value="Sort creatures" onclick="sortCreatures()">
+    <input type="button" id="editModeButton" value="Turn off edit mode" onclick="toggleEditMode()">
+    <input type="button" value="Reset", onclick="reset()">
+    <table id="initiativeTable">
+      <tr id="hiddenRow" row-type="hidden" hidden>
+        <td class = "rowdata-enumerant">#</td>
+        <td><input type="text" class="input-creature-name" placeholder="Creature name"></td>
+        <td><input type="text" class="input-init" placeholder="Initiative"></td>
+        <td class="rowdata"><input type="text" class="input-damage input-damage-incr"></td>
+        <td><input type="button" class="input-damage-add" value="+" tabindex=-1></td>
+        <td><input type="text" class="input-damage input-damage-total" value="0"></td>
+        <td class="rowdata-unconscious"><input type="checkbox"></td>
+        <td class="rowdata-remove-creature"><input class="input-remove-creature" type="button" value="-"></td>
+      </tr>
+      <tr row-type="header">
+        <th class="header-enumerant">#</th>
+        <th class="header-creature-name">Creature Name</th>
+        <th class="header-init">Initiative</th>
+        <th class="header-damage" colspan="3">Damage</th>
+        <th>Unconscious</th>
+        <th>Remove</th>
+      </tr>
+    </table> 
+  </body>
+
+  <script src="../js/initiativeTracker.js"></script>
+
+  <link rel="stylesheet" href="../css/initTracker.css">
+
+</html>

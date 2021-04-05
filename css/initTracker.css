@@ -1,0 +1,59 @@
+:root {
+  --input-height: 18px;
+}
+
+.rowdata-enumerant {
+  text-align: center;
+}
+
+.rowdata {
+  text-align: center;
+}
+
+.rowdata-unconscious {
+  text-align: center;
+}
+
+.rowdata-remove-creature {
+  text-align: center;
+  width: 96px;
+}
+
+.input-creature-name {
+  height: var(--input-height);
+}
+
+.input-init {
+  height: var(--input-height);
+}
+
+.input-damage {
+  height: var(--input-height);
+  width: 36px;
+  text-align: center;
+}
+
+.input-remove-creature {
+  width: 72px;
+}
+
+.row-creature-unconscious {
+  color: #5f2525;
+  background-color: #3e9e18;
+}
+
+.header-enumerant {
+  width: 24px
+}
+
+.header-creature-name {
+  width: 144px
+}
+
+.header-init {
+  width: 144px
+}
+
+.header-damage {
+  width: 144px
+}
